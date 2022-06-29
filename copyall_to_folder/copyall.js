@@ -9,10 +9,12 @@ let sourceFolder = args[2];
 let destFolder = args[3];
 let filesCopied = 0;
 let destName;
-if(destFolder == undefined)
+
+if(destFolder == undefined){
     destName = "";
-else
+} else {
     destName = (destFolder.match("/")) ? destFolder.slice(destFolder.lastIndexOf("/"), destFolder.length) + "/" : destFolder + "/";
+}
 
 function copyAll(source, dest){
     fs.readdirSync(source).forEach(function(file){
