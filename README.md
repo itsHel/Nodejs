@@ -1,6 +1,6 @@
 # copyall.js
 
-Goes throught source folder + subfolders and copies all files into destination
+Goes throught source folder + subfolders and copies all files into same destination
 
 ```cmd
 node copyall.js sourceFolder destinationFolder
