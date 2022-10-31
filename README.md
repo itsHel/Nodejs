@@ -5,7 +5,7 @@ Goes throught source folder + subfolders and copies all files into destination
 ```cmd
 node copyall.js sourceFolder destinationFolder
 ```
-
+<br/><br/>
 #####  
 # rename.js
 
