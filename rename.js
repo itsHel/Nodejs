@@ -1,14 +1,19 @@
 const fs = require("fs");
 
-// Renames episodes
+// Made to rename episodes into same format
 // 
 // Usage:
-// node copyall.js sourceFolder newname-**x**
+// node rename.js sourceFolder someName**x**
 
 const args = process.argv;
 let source = args[2];
 let newName = args[3];
 let filesEdited = 0;
+
+if(!newName.match(/\*\*.*\*\*/)){
+    console.log("New name must consist of double '**'");
+    return;
+}
 
 function renameAll(source){
     fs.readdirSync(source).forEach(function(file){
