@@ -2,7 +2,7 @@ const fs = require("fs");
 
 // Copies everything from subfolders into one
 // Usage:
-// node copyall.js sourceFolder DestFolder
+// node copyall.js sourceFolder destinationFolder
 
 const args = process.argv;
 let sourceFolder = args[2];
